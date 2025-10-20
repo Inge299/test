@@ -5,7 +5,7 @@ def git_config_list():
     result = subprocess.run(
         ['git', 'config', '--global', '--list'],
         capture_output=True,  # Перехватываем вывод
-        text=True,  # Возвращаем строку (а не байты)
+        text=True,  # Возвращаем строку
         encoding='utf-8'  # Указываем кодировку
     )
 
